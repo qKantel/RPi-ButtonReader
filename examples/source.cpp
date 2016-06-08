@@ -1,4 +1,11 @@
-
+/**
+ * @file    source.cpp 
+ * @author  Matthew Robinson
+ *
+ * Can compile with:
+ * g++ -std=c++14 source.cpp -o test -l bcm2835
+ */
+ 
 #include <iostream>
 #include "button_interpreter.h"
 
@@ -6,9 +13,9 @@ int main() {
   PinReader pin_reader;
   ButtonInterpreter interpreter;
 
-  pin_reader.ListenToPin(kPin0);
-  pin_reader.ListenToPin(kPin2);
-  pin_reader.ListenToPin(kPin3);
+  pin_reader.ListenToPin(kPi2Pin11);
+  pin_reader.ListenToPin(kPi2Pin13);
+  pin_reader.ListenToPin(kPi2Pin15);
 
   interpreter.AttachReader(&pin_reader);
   interpreter.SetAlpha(0.01);

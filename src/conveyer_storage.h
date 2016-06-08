@@ -1,7 +1,6 @@
 /**
  * @file    conveyer_storage.h
  * @author  Matthew Robinson
- * @status  Complete
  */
 
 #ifndef EG_VIDEOPLAYER_CONVEYER_STORAGE_H_

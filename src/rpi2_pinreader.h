@@ -1,7 +1,6 @@
 /**
  * @file    rpi2_pinreader.h
  * @author  Matthew Robinson
- * @status	Complete
  */
 
 #ifndef EG_VIDEOPLAYER_RPI2_PINREADER_H_
@@ -14,24 +13,24 @@
 
 enum Pins {
   kPinUnknown = 0,
-  kPin8  = RPI_V2_GPIO_P1_03,
-  kPin9  = RPI_V2_GPIO_P1_05,
-  kPin7  = RPI_V2_GPIO_P1_07,     kPin15 = RPI_V2_GPIO_P1_08,
-                                  kPin16 = RPI_V2_GPIO_P1_10,
-  kPin0  = RPI_V2_GPIO_P1_11,     kPin1  = RPI_V2_GPIO_P1_12,
-  kPin2  = RPI_V2_GPIO_P1_13,
-  kPin3  = RPI_V2_GPIO_P1_15,     kPin4  = RPI_V2_GPIO_P1_16,
-                                  kPin5  = RPI_V2_GPIO_P1_18,
-  kPin12 = RPI_V2_GPIO_P1_19,
-  kPin13 = RPI_V2_GPIO_P1_21,     kPin6  = RPI_V2_GPIO_P1_22,
-  kPin14 = RPI_V2_GPIO_P1_23,     kPin10 = RPI_V2_GPIO_P1_24,
-                                  kPin11 = RPI_V2_GPIO_P1_26,
-  kPin21 = RPI_V2_GPIO_P1_29,
-  kPin22 = RPI_V2_GPIO_P1_31,     kPin26 = RPI_V2_GPIO_P1_32,
-  kPin23 = RPI_V2_GPIO_P1_33,
-  kPin24 = RPI_V2_GPIO_P1_35,     kPin27 = RPI_V2_GPIO_P1_36,
-  kPin25 = RPI_V2_GPIO_P1_37,     kPin38 = RPI_V2_GPIO_P1_38,
-                                  kPin39 = RPI_V2_GPIO_P1_40
+  kPi2Pin3  = RPI_V2_GPIO_P1_03,
+  kPi2Pin5  = RPI_V2_GPIO_P1_05,
+  kPi2Pin7  = RPI_V2_GPIO_P1_07,  kPi2Pin8  = RPI_V2_GPIO_P1_08,
+                                  kPi2Pin10 = RPI_V2_GPIO_P1_10,
+  kPi2Pin11 = RPI_V2_GPIO_P1_11,  kPi2Pin12 = RPI_V2_GPIO_P1_12,
+  kPi2Pin13 = RPI_V2_GPIO_P1_13,     
+  kPi2Pin15 = RPI_V2_GPIO_P1_15,  kPi2Pin16 = RPI_V2_GPIO_P1_16,
+                                  kPi2Pin18 = RPI_V2_GPIO_P1_18,
+  kPi2Pin19 = RPI_V2_GPIO_P1_19,
+  kPi2Pin21 = RPI_V2_GPIO_P1_21,  kPi2Pin22 = RPI_V2_GPIO_P1_22,
+  kPi2Pin23 = RPI_V2_GPIO_P1_23,  kPi2Pin24 = RPI_V2_GPIO_P1_24,
+                                  kPi2Pin26 = RPI_V2_GPIO_P1_26,
+  kPi2Pin29 = RPI_V2_GPIO_P1_29,
+  kPi2Pin31 = RPI_V2_GPIO_P1_31,  kPi2Pin32 = RPI_V2_GPIO_P1_32,
+  kPi2Pin33 = RPI_V2_GPIO_P1_33,
+  kPi2Pin35 = RPI_V2_GPIO_P1_35,  kPi2Pin36 = RPI_V2_GPIO_P1_36,
+  kPi2Pin37 = RPI_V2_GPIO_P1_37,  kPi2Pin38 = RPI_V2_GPIO_P1_38,
+                                  kPi2Pin40 = RPI_V2_GPIO_P1_40
 };
 
 /**

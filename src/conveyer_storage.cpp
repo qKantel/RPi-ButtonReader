@@ -1,7 +1,6 @@
 /**
  * @file    conveyer_storage.cpp
  * @author  Matthew Robinson
- * @status  Complete
  */
 
 #include "conveyer_storage.h"

@@ -1,7 +1,6 @@
 /**
  * @file    button_interpreter.h
  * @author  Matthew Robinson
- * @status  Complete
  */
 
 #ifndef EG_VIDEOPLAYER_BUTTON_INTERPRETER_H_

@@ -1,7 +1,6 @@
 /**
  * @file    rpi2_pinreader.cpp
  * @author  Matthew Robinson
- * @status  Complete
  */
 
 #include "rpi2_pinreader.h"
