@@ -19,14 +19,10 @@
  */
 class ButtonInterpreter {
 public:
-  ButtonInterpreter() :
-    reader_(nullptr),
-    unhandled_reader_change_(false),
-    alpha_(0.5) {}
-  ButtonInterpreter(PinReader * pin_reader) :
-    reader_(pin_reader),
-    unhandled_reader_change_(true),
-    alpha_(0.5) {}
+  /// Default constructor
+  ButtonInterpreter();
+  /// Constructor, same as AttachReader()
+  ButtonInterpreter(PinReader * pin_reader);
   
   ~ButtonInterpreter() { }
   

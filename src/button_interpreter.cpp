@@ -7,6 +7,17 @@
 
 #include "button_interpreter.h"
 
+ButtonInterpreter::ButtonInterpreter() :
+  reader_(nullptr),
+  unhandled_reader_change_(false),
+  alpha_(0.5) {}
+  // end constructor
+  
+ButtonInterpreter::ButtonInterpreter(PinReader * pin_reader) :
+  reader_(pin_reader),
+  unhandled_reader_change_(true),
+  alpha_(0.5) {}
+
 void ButtonInterpreter::AttachReader(PinReader * pin_reader) {
   reader_ = pin_reader;
   unhandled_reader_change_ = true;
