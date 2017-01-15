@@ -5,15 +5,28 @@ A problem that is faced when attaching a number pad or buttons to a Raspberry Pi
 
 This button reader helps eliminate this problem by implementing an exponential moving average when detecting each pin value. https://en.wikipedia.org/wiki/Moving_average#Exponential_moving_average
 
-One of the current pitfalls is that the library doesn't take advantage of the multiple cores the RPi has to offer. One is for the sake of simplicity and time allotted to this project. Two, anyone who needs multiple threads may have the choice of utilizing the other three threads for their needs instead of being forced to run two concurrent threads. Sometime in the future users will be able to have the choice to choose.
-
 # Real Usage
 The ideology follows a flip-phone keypad, NOT a keyboard.
+
 Pressing a button - returns 1 pin.
+
 Holding a button  - returns 1 pin upon activation, not release.
+
 Pushing multiple buttons - returns each pin in the order in which the RPi believes to receive the first input.
 
 # BCM2835
 Requires bcm2835 by Mike McCauley.
 Pin Reader wraps around bcm2835.
 Follow installation guide at: http://www.airspayce.com/mikem/bcm2835/
+
+# Problems (In order of highest priority)
+#### 1. The algorithm is based soley on the program running as fast as possible.
+Workaround: Develop the remaining part of your project. Test the program and find a suitable alpha.
+
+#### 2. No choice to spawn a thread in parallel to the main thread.
+Features: A start function to allow the reader to run separately. Client will create necessary thread-safe function callbacks.
+Note: Implementing this will radically change the current client interface as well.
+
+# Versions
+#### 1.0 (June 9, 2016)
+-Stable working build for the original project.
